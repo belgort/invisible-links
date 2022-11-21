@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        :not(.skip-link):focus {
+            outline: 5px solid red;
+        }
+        
+        header ul, footer ul {
+            padding-left: 0;
+            display: flex;
+            list-style-type: none;
+            gap: 1rem;
+        }
+
+        .skip-link {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: .5rem;
+            translate: 0 -100%;
+            transition: translate 150ms ease-in-out;
+        }
+
+        .skip-link:focus {
+            translate: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <a href="#footer-content" class="skip-link">Skip to footer content</a>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section>
+            <h1>Article Title</h1>
+            <p>Lorem ipsum dolor sit <a href="">amet consectetur</a> adipisicing elit. Cum deleniti consequuntur unde! Architecto voluptatem dolorum molestiae ad at necessitatibus expedita magni explicabo adipisci culpa soluta hic voluptates aliquid dolor obcaecati voluptas aliquam consectetur sit, corporis animi quod quidem eius, repellendus minus. Distinctio sequi nobis perferendis expedita consequuntur nisi mollitia quia in, et labore dolorum eos sunt voluptatum ipsa rem facilis repellat, nostrum fugit cum eveniet! Tenetur, error. Deleniti, cumque. Et consectetur odit numquam itaque nemo, quos, repellendus corporis dolor, soluta sit voluptatem accusantium perspiciatis. Aliquam, laboriosam consectetur harum eaque qui officiis odio distinctio eius quisquam, et tempore. Tenetur, dolor qui!</p>
+            <a href="#after-links" class="skip-link">Skip to after links</a>
+            <ul>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+                <li><a href="">Link</a></li>
+            </ul>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/VUR0I5mqq7I" title="Why Does Nearly Every Site Have This “Invisible Unclickable“ Link?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p id="after-links">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius incidunt rem expedita maxime voluptates aliquam quis assumenda cumque velit atque cum rerum esse, illo illum ut amet harum deserunt sit at explicabo alias repudiandae! Reprehenderit perspiciatis fuga ratione incidunt quos id, neque aliquid necessitatibus quas commodi distinctio dolorem aspernatur numquam, nulla ut ullam voluptate delectus doloremque. Distinctio, libero est? Fuga in recusandae perspiciatis quam eius, officiis vitae modi nam incidunt eveniet. Alias molestias inventore autem corporis tempore, voluptate iste, temporibus vel sint ad laborum ullam minima fugit rem dolore a quibusdam. Atque molestiae quia aspernatur ab sunt voluptatibus sed?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum vero minus aut dolorem consequatur consectetur accusamus voluptatem beatae rerum quidem labore, enim veritatis magnam dolore! Nostrum praesentium minima tenetur iure porro obcaecati distinctio vel excepturi in inventore a, placeat animi ipsa. Doloribus incidunt assumenda a fugit nostrum, consequatur culpa minima, quos illum corrupti distinctio provident cum commodi ratione praesentium. Magnam earum amet obcaecati et iusto praesentium debitis. Ea harum nam obcaecati provident aliquam. Eos adipisci earum sequi assumenda tenetur veniam quo tempora cupiditate libero dolor ipsa iure magni dolores deleniti, dolore molestiae quod possimus fugiat reprehenderit suscipit doloremque, ab ipsum itaque nobis? Praesentium porro eligendi itaque, perspiciatis optio maiores blanditiis ad temporibus illum officia nobis quia animi? Hic sit laboriosam delectus repudiandae beatae libero cumque adipisci ipsam tenetur, earum quae perferendis vero dolorum omnis quia ut quisquam commodi sunt nesciunt harum unde deserunt dolor. Quos saepe fugiat ducimus ipsa neque maxime sed, perferendis dolorem impedit, fugit eaque officia. Voluptatum atque nihil iusto fugit facere aperiam dolorem delectus eaque blanditiis sequi quas ipsum recusandae doloribus odio molestias, illum aliquam aliquid eveniet mollitia! Numquam voluptatem neque voluptate magnam odit culpa qui, atque maxime labore consequuntur eaque fugiat cupiditate quo, eum tempora. Architecto!</p>
+        </section>
+    </main>
+    <footer id="footer-content">
+        <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+        </ul>
+        <p>&copy; 2022 by You</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo distinctio eius, quibusdam, at enim a magni ex, nesciunt delectus commodi expedita sunt nisi molestias dignissimos eum id voluptatum est laudantium!<50></50></p>
+    </footer>
+</body>
+</html>
